@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality Engineering - Dennis Gerike</title>
+    <link>https://dennis-gerike.de/</link>
+    <description>Recent content on Quality Engineering - Dennis Gerike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Sun, 22 Oct 2023 11:04:49 +0200</lastBuildDate><atom:link href="https://dennis-gerike.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Quality Engineering?</title>
+      <link>https://dennis-gerike.de/posts/what-is-quality-engineering/</link>
+      <pubDate>Sun, 22 Oct 2023 11:04:49 +0200</pubDate>
+      
+      <guid>https://dennis-gerike.de/posts/what-is-quality-engineering/</guid>
+      <description>What Is Quality Engineering? lorem ipsum</description>
+    </item>
+    
+  </channel>
+</rss>

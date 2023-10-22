@@ -1,0 +1,4 @@
+baseURL = 'https://dennis-gerike.de/'
+languageCode = 'de-de'
+title = 'Quality Engineering - Dennis Gerike'
+theme = 'ananke'
