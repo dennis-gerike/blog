@@ -1,4 +1,58 @@
 baseURL = 'https://dennis-gerike.de/'
-languageCode = 'de-de'
-title = 'Quality Engineering - Dennis Gerike'
-theme = 'ananke'
+languageCode = 'en-us'
+title = '[Dennis Gerike]'
+theme = 'personal-web'
+
+[params.sidebar]
+  logo = "/images/dennis-gerike.jpg"
+
+[params.social]
+  github = "https://github.com/dgerike"
+  linkedin = "https://www.linkedin.com/in/dennis-gerike/"
+
+[params]
+  accentColor = "#FD3519"
+  rendererSafe = false # set to true if wish to remove the unsafe renderer setting below (recommended). Titles will not be run through markdownify
+
+[params.sections]
+  post = "article"
+
+[params.main]
+  latestPublishHeader = " "
+
+[params.intro]
+  main = "Dennis Gerike"
+  sub = "Test Automation Engineering"
+
+[[menu.main]]
+  identifier = "about"
+  name = "About me"
+  title = "About me"
+  url = "/about/"
+  weight = -110
+
+[[menu.main]]
+  identifier = "demo"
+  name = "Demo Project"
+  title = "Demo Project"
+  url = "/demo-project/"
+  weight = -100
+
+[[menu.main]]
+  identifier = "articles"
+  name = "Articles"
+  title = "Articles"
+  url = "/post/"
+  weight = -120
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  title = "Contact"
+  url = "/contact/"
+  weight = -90
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
