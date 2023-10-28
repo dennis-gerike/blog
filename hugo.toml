@@ -22,7 +22,7 @@ theme = 'personal-web'
 
 [params.intro]
   main = "Dennis Gerike"
-  sub = "Test Automation Engineering"
+  sub = "Engineering test automation solutions for the web - with Cypress, Xray and BDD"
 
 [[menu.main]]
   identifier = "about"
