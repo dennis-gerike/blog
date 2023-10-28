@@ -1,6 +1,6 @@
-baseURL = 'https://dennis-gerike.de/'
+baseURL = 'https://dgerike.github.io/dennis-gerike.de/'
 languageCode = 'en-us'
-title = '[Dennis Gerike]'
+title = '// Dennis Gerike'
 theme = 'personal-web'
 Copyright = 'Background image: ESA/Hubble & NASA, I. Karachentsev et al., F. High et al.; CC BY 4.0; www.flickr.com/photos/europeanspaceagency/33939526548/'
 
@@ -15,6 +15,7 @@ Copyright = 'Background image: ESA/Hubble & NASA, I. Karachentsev et al., F. Hig
 [params]
   accentColor = "#FD3519"
   rendererSafe = false # set to true if wish to remove the unsafe renderer setting below (recommended). Titles will not be run through markdownify
+  mainSections = ['post']
 
 [params.sections]
   post = "article"

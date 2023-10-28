@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennis-gerike.de/about/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/about/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/bdd/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/bdd/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/categories/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/categories/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/cucumber/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/cucumber/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/gherkin/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/gherkin/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/post/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/post/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/post/who-own-the-e2e-tests/</loc>
+    <loc>https://dgerike.github.io/dennis-gerike.de/post/who-own-the-e2e-tests/</loc>
   </url>
 </urlset>

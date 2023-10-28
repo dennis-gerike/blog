@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gherkin on [Dennis Gerike]</title>
-    <link>https://dennis-gerike.de/tags/gherkin/</link>
-    <description>Recent content in Gherkin on [Dennis Gerike]</description>
+    <title>Gherkin on // Dennis Gerike</title>
+    <link>https://dgerike.github.io/dennis-gerike.de/tags/gherkin/</link>
+    <description>Recent content in Gherkin on // Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://dennis-gerike.de/tags/gherkin/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>Background image: ESA/Hubble &amp; NASA, I. Karachentsev et al., F. High et al.; CC BY 4.0; www.flickr.com/photos/europeanspaceagency/33939526548/</copyright><atom:link href="https://dgerike.github.io/dennis-gerike.de/tags/gherkin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gherkin vs Cucumber vs BDD</title>
-      <link>https://dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</link>
+      <link>https://dgerike.github.io/dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</guid>
+      <guid>https://dgerike.github.io/dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</guid>
       <description>&lt;p&gt;lorem ipsum&lt;/p&gt;</description>
     </item>
     
