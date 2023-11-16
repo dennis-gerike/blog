@@ -2,11 +2,11 @@ baseURL = 'https://dgerike.github.io/dennis-gerike.de/'
 languageCode = 'en-us'
 title = '// - Dennis Gerike'
 theme = 'personal-web'
-Copyright = 'Background image: ESA/Hubble & NASA, I. Karachentsev et al., F. High et al.; CC BY 4.0; www.flickr.com/photos/europeanspaceagency/33939526548/'
+Copyright = 'Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869'
 
 [params.sidebar]
   logo = "images/dennis-gerike.jpg"
-  backgroundImage = "images/bg.jpg"
+  backgroundImage = "images/bg2.jpg"
 
 [params.social]
   github = "https://github.com/dgerike"
