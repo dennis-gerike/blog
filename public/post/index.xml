@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on // Dennis Gerike</title>
+    <title>Posts on // - Dennis Gerike</title>
     <link>https://dgerike.github.io/dennis-gerike.de/post/</link>
-    <description>Recent content in Posts on // Dennis Gerike</description>
+    <description>Recent content in Posts on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Background image: ESA/Hubble &amp; NASA, I. Karachentsev et al., F. High et al.; CC BY 4.0; www.flickr.com/photos/europeanspaceagency/33939526548/</copyright><atom:link href="https://dgerike.github.io/dennis-gerike.de/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright><atom:link href="https://dgerike.github.io/dennis-gerike.de/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gherkin vs Cucumber vs BDD</title>
       <link>https://dgerike.github.io/dennis-gerike.de/post/gherkin-vs-cucumber-vs-bdd/</link>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dgerike.github.io/dennis-gerike.de/post/who-own-the-e2e-tests/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;images/sample.jpg&#34;
+      <description>&lt;figure&gt;&lt;img src=&#34;https://dgerike.github.io/dennis-gerike.de/images/sample.jpg&#34;
          alt=&#34;Example of Portfolio page&#34;/&gt;&lt;figcaption&gt;
             &lt;p&gt;Example of Portfolio page&lt;/p&gt;
         &lt;/figcaption&gt;
