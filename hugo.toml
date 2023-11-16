@@ -1,6 +1,6 @@
 baseURL = 'https://dgerike.github.io/dennis-gerike.de/'
 languageCode = 'en-us'
-title = '// Dennis Gerike'
+title = '// - Dennis Gerike'
 theme = 'personal-web'
 Copyright = 'Background image: ESA/Hubble & NASA, I. Karachentsev et al., F. High et al.; CC BY 4.0; www.flickr.com/photos/europeanspaceagency/33939526548/'
 
@@ -25,7 +25,7 @@ Copyright = 'Background image: ESA/Hubble & NASA, I. Karachentsev et al., F. Hig
 
 [params.intro]
   main = "Dennis Gerike"
-  sub = "Engineering test automation solutions for the web - with Cypress, Xray and BDD"
+  sub = "Engineering test automation solutions for the web - with Cypress, BDD and Jira/Xray"
 
 [[menu.main]]
   identifier = "about"
