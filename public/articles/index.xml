@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Test Automation Engineering on // - Dennis Gerike</title>
-    <link>https://dgerike.github.io/dennis-gerike.de/</link>
-    <description>Recent content in Test Automation Engineering on // - Dennis Gerike</description>
+    <title>Posts on // - Dennis Gerike</title>
+    <link>https://dgerike.github.io/dennis-gerike.de/articles/</link>
+    <description>Recent content in Posts on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright><atom:link href="https://dgerike.github.io/dennis-gerike.de/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright><atom:link href="https://dgerike.github.io/dennis-gerike.de/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gherkin vs Cucumber vs BDD</title>
       <link>https://dgerike.github.io/dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd/1/01/</link>
