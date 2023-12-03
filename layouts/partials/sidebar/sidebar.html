@@ -1,0 +1,48 @@
+<header style="{{ partial "sidebar/style" . | safeCSS }}">
+  <div class="intro">
+    <div class="logo-container">
+      <a href="/">
+        <img src='{{ .Site.Params.sidebar.logo | absURL }}' alt="Dennis Gerike" class="rounded-logo">
+      </a>
+    </div>
+    <h2>{{ .Site.Params.intro.main }}</h2>
+    <h3>{{ .Site.Params.intro.sub }}</h3>
+    <div class="menu">
+      {{ partial "sidebar/menu" . }}
+    </div>
+  </div>
+
+  <div class="socials">
+      {{ partial "sidebar/social" .}}
+  </div>
+</header>
+
+<div class="mobile-header">
+  <p> {{ .Site.Title }} </p>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="overlay-menu">
+  <header>
+    <div class="intro">
+      <div class="logo-container">
+        <a href="/">
+          <img src='{{ .Site.Params.sidebar.logo | absURL }}' alt="Dennis Gerike" class="rounded-logo">
+        </a>
+      </div>
+      <h2>{{ .Site.Params.intro.main }}</h2>
+      <h3>{{ .Site.Params.intro.sub }}</h3>
+      <div class="menu">
+        {{ partial "sidebar/menu" . }}
+      </div>
+    </div>
+
+    <div class="socials">
+        {{ partial "sidebar/social" .}}
+    </div>
+  </header>
+</div>
