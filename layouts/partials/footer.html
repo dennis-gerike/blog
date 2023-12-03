@@ -1,0 +1,31 @@
+    </main>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="external">Hugo</a>,
+      using the <a href="https://github.com/bjacquemet/personal-web" target='_blank' rel="external">Personal Web</a> theme.
+      Icons come from the <a href="https://fontawesome.com/license" target="_blank" rel="external">Font Awesome</a> library.
+      Background <a href="https://flickr.com/photos/lawrenceyeah/9659161869" target='_blank' rel="external">image</a> by Lawrence Wang /
+      <a href="https://creativecommons.org/licenses/by/2.0/" target='_blank' rel="external">CC BY 2.0</a>.
+    </div>
+  </footer>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Raleway:400,400i,600" rel="stylesheet">
+  <script type="text/javascript">
+    document.querySelector('.mobile-header').addEventListener('click', function () {
+      var om = document.querySelector(".overlay-menu");
+      if (document.querySelector('.hamburger').classList.contains("cross")) {
+        document.querySelector('.hamburger').classList.remove("cross");
+        om.style.display = "none";
+        om.style.width = "0%";
+        om.style.height = "0%";
+      }
+      else {
+        document.querySelector('.hamburger').classList.add("cross");
+        om.style.width = "100%";
+        om.style.height = "100vh";
+        om.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
