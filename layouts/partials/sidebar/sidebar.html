@@ -1,7 +1,7 @@
 <header style="{{ partial "sidebar/style" . | safeCSS }}">
   <div class="intro">
     <div class="logo-container">
-      <a href="/">
+      <a href="{{ absURL "" }}">
         <img src='{{ .Site.Params.sidebar.logo | absURL }}' alt="Dennis Gerike" class="rounded-logo">
       </a>
     </div>
@@ -30,7 +30,7 @@
   <header>
     <div class="intro">
       <div class="logo-container">
-        <a href="/">
+        <a href="{{ absURL "" }}">
           <img src='{{ .Site.Params.sidebar.logo | absURL }}' alt="Dennis Gerike" class="rounded-logo">
         </a>
       </div>
