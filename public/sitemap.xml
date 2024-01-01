@@ -2,17 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/bdd/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/cucumber/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/cypress/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/gherkin/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/articles/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/xray/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/about-me/</loc>
   </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/categories/</loc>
   </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/contact/</loc>
-  </url><url>
-    <loc>https://dgerike.github.io/dennis-gerike.de/</loc>
-  </url><url>
-    <loc>https://dgerike.github.io/dennis-gerike.de/articles/</loc>
-  </url><url>
-    <loc>https://dgerike.github.io/dennis-gerike.de/tags/</loc>
   </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/articles/who-owns-the-e2e-tests-business-or-devs/1/01/</loc>
   </url>
