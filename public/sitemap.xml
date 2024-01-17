@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/ide/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/intellij/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/linter/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/articles/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/static-code-analysis/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/typescript/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/vs-code/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dgerike.github.io/dennis-gerike.de/tags/webstorm/</loc>
+    <lastmod>2024-01-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/tags/bdd/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,19 +44,10 @@
     <loc>https://dgerike.github.io/dennis-gerike.de/tags/cypress/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dgerike.github.io/dennis-gerike.de/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/tags/gherkin/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dgerike.github.io/dennis-gerike.de/articles/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dgerike.github.io/dennis-gerike.de/tags/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dgerike.github.io/dennis-gerike.de/tags/xray/</loc>

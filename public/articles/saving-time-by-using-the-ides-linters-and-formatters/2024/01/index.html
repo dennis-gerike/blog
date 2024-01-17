@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang='en'><head>
+  <title>Saving time by using the IDE&#39;s linters and formatters - // - Dennis Gerike</title>
+  <link rel='canonical' href='https://dgerike.github.io/dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/' />
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <meta name='description' content='Modern IDEs can help keeping your code clean without the hassle to install, configure or maintain the linting tools yourself.' />
+  <meta name='theme-color' content='#FD3519' />
+  
+
+  <meta name="generator" content="Hugo 0.121.1">
+
+  
+
+
+
+
+
+<link rel="stylesheet" href="https://dgerike.github.io/dennis-gerike.de/sass/style.min.dce7cd3d44a877c50fd7da73096b4827b6320670ee548d2edf6b8656ba8fdcaf.css" integrity="sha256-3OfNPUSod8UP19pzCWtIJ7YyBnDuVI0u32uGVrqP3K8=" media="screen">
+<link rel="stylesheet" href="https://dgerike.github.io/dennis-gerike.de/syntax.min.css" integrity="" media="screen">
+
+  <meta property="og:title" content="Saving time by using the IDE&#39;s linters and formatters" />
+<meta property="og:description" content="Modern IDEs can help keeping your code clean without the hassle to install, configure or maintain the linting tools yourself." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dgerike.github.io/dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-01-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-01-17T00:00:00+00:00" />
+
+
+  <meta itemprop="name" content="Saving time by using the IDE&#39;s linters and formatters">
+<meta itemprop="description" content="Modern IDEs can help keeping your code clean without the hassle to install, configure or maintain the linting tools yourself."><meta itemprop="datePublished" content="2024-01-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-01-17T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2398">
+<meta itemprop="keywords" content="IDE,WebStorm,IntelliJ,VS Code,TypeScript,Static Code Analysis,Linter," />
+</head>
+<body>
+
+  <header style="background-image:linear-gradient(
+      rgba(0,0,0,0.4),rgba(0,0,0,0.4)
+    ),url(&#39;https://dgerike.github.io/dennis-gerike.de/images/bg2.jpg&#39;)">
+  <div class="intro">
+    <div class="logo-container">
+      <a href="https://dgerike.github.io/dennis-gerike.de/">
+        <img src='https://dgerike.github.io/dennis-gerike.de/images/dennis-gerike.jpg' alt="Dennis Gerike" class="rounded-logo">
+      </a>
+    </div>
+    <h2>Dennis Gerike</h2>
+    <h3>Engineering test automation solutions for the web - with Cypress, BDD and Jira/Xray</h3>
+    <div class="menu">
+      
+
+        <p>
+            <a href="/dennis-gerike.de/articles/">
+                Articles
+            </a>
+        </p>
+
+        <p>
+            <a href="/dennis-gerike.de/about-me/">
+                About me
+            </a>
+        </p>
+
+        <p>
+            <a href="https://github.com/dgerike/more-cars-e2e-tests">
+                Demo Project
+            </a>
+        </p>
+
+        <p>
+            <a href="/dennis-gerike.de/contact/">
+                Contact
+            </a>
+        </p>
+
+    </div>
+  </div>
+
+  <div class="socials">
+      
+  
+    <a href="https://github.com/dgerike" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/dennis-gerike/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  </div>
+</header>
+
+<div class="mobile-header">
+  <p> // - Dennis Gerike </p>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="overlay-menu">
+  <header>
+    <div class="intro">
+      <div class="logo-container">
+        <a href="https://dgerike.github.io/dennis-gerike.de/">
+          <img src='https://dgerike.github.io/dennis-gerike.de/images/dennis-gerike.jpg' alt="Dennis Gerike" class="rounded-logo">
+        </a>
+      </div>
+      <h2>Dennis Gerike</h2>
+      <h3>Engineering test automation solutions for the web - with Cypress, BDD and Jira/Xray</h3>
+      <div class="menu">
+        
+
+        <p>
+            <a href="/dennis-gerike.de/articles/">
+                Articles
+            </a>
+        </p>
+
+        <p>
+            <a href="/dennis-gerike.de/about-me/">
+                About me
+            </a>
+        </p>
+
+        <p>
+            <a href="https://github.com/dgerike/more-cars-e2e-tests">
+                Demo Project
+            </a>
+        </p>
+
+        <p>
+            <a href="/dennis-gerike.de/contact/">
+                Contact
+            </a>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="socials">
+        
+  
+    <a href="https://github.com/dgerike" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/dennis-gerike/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+    </div>
+  </header>
+</div>
+
+  <div class="content-wrapper">
+    
+    <main id="content" class="posts">
+
+
+  <h1>Saving time by using the IDE&rsquo;s linters and formatters</h1>
+  <p>How should code be indented - with tabs or with spaces?
+Should the indentation be two or four spaces wide?
+Should the opening curly brace be on the same line as the function declaration or on the next line?
+Should there be an empty line before each return statement?
+Should &ldquo;yoda&rdquo; conditions be allowed or even enforced?
+Should unused variables be deleted?</p>
+<p>With each of those questions you can fill whole tech talks.
+But does it make sense to discuss these questions in your team?
+Does it make sense to define <strong>custom</strong> rules, just for your project?
+Is it worth the time and effort?
+Will it save you time or money in the future?
+Will the code quality be better compared to just using the <strong>standard</strong> linting settings of the IDE?
+Let&rsquo;s explore the idea.</p>
+<h2 id="the-ide-has-you-covered">The IDE has you covered!</h2>
+<p>So, you are starting a new project and want to have consistent code styling from day one onwards?
+Or you have an existing project and want to improve the code quality, but because of the low test coverage don&rsquo;t want to change any internal logic?
+You also want some tooling that shows you how to improve the code or even automatically apply those recommendations?
+Then, what you want is a &ldquo;static code analyzer&rdquo;.</p>
+<p>A static code analyzer reviews your code at compile time (not at runtime) or directly while you are programming.
+Those analyzers can come in the form of &ldquo;formatters&rdquo;, &ldquo;linters&rdquo; or &ldquo;type checkers&rdquo;.
+A formatter checks the code for consistent &ldquo;visual&rdquo; styling.
+It makes sure that the same indentation (tabs vs spaces), the same quotes (single vs double) or the same naming convention (camel case vs snake case) is used across the whole code base.
+Linters go a bit deeper and check the code for hidden problems that might cause runtime issues in the future.
+They can locate unreachable code, loops that can only loop once, variables that could/should be made immutable, comparisons that are not type-safe, etc.
+The linter might suggest some code restructuring (e.g. for yoda conditions), but the behavior of the application should not change because of that (assuming that piece of code was bug-free before).</p>
+<p>For the popular programming languages there exist a bunch of static analyzers.
+In the JavaScript world we have for example <code>prettier</code> for formatting and <code>eslint</code> for linting.
+In general, those tools are very easy to install.
+<strong>But</strong>, do you really want to invest the time to <strong>configure</strong> and <strong>maintain</strong> them yourself?</p>
+<p>What settings would you choose for the rules?
+Eslint has a few hundred rules, each with at least two options.
+Either you let an authority decide (e.g. the CTO).
+This is bad for team moral and expensive for the company (CTO time is precious).
+Or you let the team decide.
+Then, you will have many long discussions, because everyone has another opinion.
+Finding a consensus will be very hard.</p>
+<p>Also, you have to keep the formatter and linter up-to-date.
+Over time, linting rules will change, new rules will be added and some will be deleted.
+Have a look at the <a href="https://eslint.org/docs/latest/rules"><code>eslint</code> rules</a>.
+Scroll down to the deprecated and removed rules.
+This is a very long list.
+Each entry means maintenance work for you - even if it is just to determine that this specific rule is not relevant for your case.</p>
+<p>To avoid both problems you can just utilize your IDE.
+Each modern IDE comes with a bunch of linters, formatters and code analysis tools pre-installed.
+In the case of TypeScript all major IDEs (VS Code, WebStorm, IntelliJ Ultimate) use the same linter under the hood, with the <strong>same</strong> ruleset.
+So, even if your team members use different IDEs (on maybe even different operating systems) the linting results will always be the same for everyone.</p>
+<p>Yes, you are losing control over the linting rules.
+Yes, you or your teammates will probably not like some of the rules.
+But, do you have such a specific use case, that the default settings, that millions of developers use don&rsquo;t work for you?
+Can you justify the time-invest that is needed for your custom solution?</p>
+<h2 id="implementation-strategies">Implementation Strategies</h2>
+<p>There are multiple options to get started with the IDE linting.
+Depending on the age, size, code quality and test coverage of the project the strategy can be more aggressive or needs to be more defensive.</p>
+<h3 id="new-projects">New projects</h3>
+<p>For new projects you can start quite aggressive.
+The IDE should be configured to automatically format every file that is touched (see next chapter).
+The linting rules should <strong>not</strong> be customized.
+Just use the predefined rules as selected by the IDE.</p>
+<p>Try it out for a few weeks, then evaluate.
+Has it improved your productivity?
+Has it improved the code quality?
+Has it improved the code review process?
+E.g. are there now less comments about styling issues, but more feedback about the actual code architecture?</p>
+<p>If there was anything annoying about the linting rules or the process itself, then try to improve it.
+For example, by default VS Code applies two different sets of linting rules to TypeScript files.
+To keep the code consistent across the whole team the IDE-specific rules need to be disabled.</p>
+<p>Try again for a few weeks.
+What might happen is that your team is not happy with some of the linting rules.
+Should they really be a blocker, check if you can modify some of the rules.
+In the case of TypeScript you can create a <code>tslint.json</code> or <code>tslint.yaml</code> file and adjust the rules in there.
+Don&rsquo;t forget to check in the config file, so the whole team still works with the same ruleset.</p>
+<p>But, beware! You have now opened Pandora&rsquo;s box.
+The original idea was to avoid long discussions in the team - they will now return.
+We wanted to avoid maintaining the linter - this will now be necessary (if only a little bit).</p>
+<h3 id="existing-projects">Existing projects</h3>
+<p>In existing projects it might be sensible to start slow and in a very controlled manner.
+The first step could be to only allow manually triggered reformatting - no automations (yet).
+You can go even further and only allow the IDE to format the <strong>changed</strong> lines, not the <strong>whole</strong> file.</p>
+<p>Try it out for a few weeks, then evaluate.
+Has it improved your productivity?
+Has it improved the code quality?
+Has it improved the code review process?
+Did the formatters break anything?</p>
+<p>If everything worked fine, then you can get braver.
+Let the IDE always reformat the whole file, not just the changed lines.
+Try it out for a few weeks, then evaluate.</p>
+<p>If everything worked fine, get braver again.
+Let the IDE reformat your code automatically on each save.
+Try it out for a few weeks, then evaluate.</p>
+<p>This strategy allows you to slowly (but steadily) improve the code quality of an existing project.
+Opposed to a big bang solution there is no time pressure.
+Also, the team can decide when it is ready to do the next step.</p>
+<h2 id="how-to-configure-the-ide">How to configure the IDE?</h2>
+<p>So, the IDE has all that linting power, but where is it?
+How does is work?
+Out of the box, the IDE will not clean up your code automatically.
+That would be strange and I would feel offended, when the IDE just edits my code without my permission.
+You have to trigger the reformatting manually or activate the automation options.</p>
+<p>The IDEs usually use the same linters (the most popular ones), with the same configuration.
+E.g. <code>VS Code</code>, <code>IntelliJ Ultimate</code> and <code>WebStorm</code> use the same <code>eslint</code> rules for TypeScript code.
+This means, everyone in the team can use a different IDE, but has the identically formatted code in the end.</p>
+<p>The following part shows you how to configure the formatters in <code>WebStorm</code>, <code>IntelliJ</code> and <code>VS Code</code>.</p>
+<h3 id="reformatting-on-demand">Reformatting on demand</h3>
+<p>The most controlled way to clean up the code is to run the formatters manually.
+This is the way to go when the code base is too messy to just let an automated script run over the whole file.</p>
+<h4 id="webstorm-v20233">WebStorm (v2023.3)</h4>
+<p>In WebStorm the command to clean up the code can be found under:</p>
+<p><code>Code</code> → <code>Reformat Code</code></p>
+<p>For a more fluent workflow the command can also be triggered via keyboard shortcut:</p>
+<ul>
+<li><code>CTRL</code> + <code>ALT</code> + <code>L</code> (Linux)</li>
+<li><code>CTRL</code> + <code>ALT</code> + <code>L</code> (Windows)</li>
+<li><code>CMD</code> + <code>OPT</code> + <code>L</code> (MacOS)</li>
+</ul>
+<h4 id="intellij-ultimate-v20233">IntelliJ Ultimate (v2023.3)</h4>
+<p>In IntelliJ Ultimate the command to clean up the code can be found under:</p>
+<p><code>Code</code> → <code>Reformat Code</code></p>
+<p>For a more fluent workflow the command can also be triggered via keyboard shortcut:</p>
+<ul>
+<li><code>CTRL</code> + <code>ALT</code> + <code>L</code> (Linux)</li>
+<li><code>CTRL</code> + <code>ALT</code> + <code>L</code> (Windows)</li>
+<li><code>CMD</code> + <code>OPT</code> + <code>L</code> (MacOS)</li>
+</ul>
+<p>⚠️ Those commands and shortcuts also exist in the Community Edition, but might be limited.
+TypeScript linting and reformatting for example is only supported in the Ultimate version.</p>
+<h4 id="visual-studio-code">Visual Studio Code</h4>
+<p>In Visual Studio Code the code cleanup can be triggered by those keyboard shortcuts:</p>
+<ul>
+<li><code>CTRL</code> + <code>SHIFT</code> + <code>I</code> (Linux)</li>
+<li><code>SHIFT</code> + <code>ALT</code> + <code>F</code> (Windows)</li>
+<li><code>SHIFT</code> + <code>OPT</code> + <code>F</code> (MacOS)</li>
+</ul>
+<p>⚠️ VS Code has additional formatting rules that might interfere with the default linters.
+It might be necessary to deactivate those to get a consistent result across all IDEs.
+See <code>File</code> → <code>Preferences</code> → <code>Settings</code> → <code>Extensions</code>.</p>
+<h3 id="going-one-step-further-auto-format-on-save">Going one step further: Auto-format on save</h3>
+<p>Manually triggering the reformatting means that you have full control over it.
+You can decide which files should be cleaned up and which not.
+But - being a human - sometimes you will forget to run the formatter.
+Then, the next time you work on the same file you will be presented with a bunch of changes that have nothing to do with your current changes.</p>
+<p>By using an auto-formatter your code will be cleaned up every time you save.
+Because it is (nearly) impossible to forget to save you also cannot forget to clean up.
+This also means, a PR cannot be rejected anymore because it violated one of the linting rules.</p>
+<h4 id="webstorm-v20233-1">WebStorm (v2023.3)</h4>
+<p>In WebStorm you find the setting to auto-format on save here:</p>
+<p><code>Files</code> → <code>Settings</code> → <code>Tools</code> → <code>Actions on Save</code> → <code>Reformat Code</code></p>
+<p>When activated it gives you the option to select the filetypes for which the reformatting should be applied.
+By default, every filetype is selected.
+It might make sense to reduce that list to only the filetypes you are actively working on.
+In a TypeScript project that could be for example <code>*.ts</code>, <code>*.tsx</code> and <code>*.json</code> files.</p>
+<p>You can also decide whether the auto-formatter should run on the whole file or just the code you changed.
+For new projects the default option <code>whole file</code> should be fine.
+For existing (messy) projects it might be sensible to start with the <code>changed files</code> setting first.
+Then, a one-liner doesn&rsquo;t bloat the whole commit, just because the linter found so many issues.</p>
+<h4 id="intellij-ultimate-v20233-1">IntelliJ Ultimate (v2023.3)</h4>
+<p>In IntelliJ Ultimate you find the setting to auto-format on save here:</p>
+<p><code>Files</code> → <code>Settings</code> → <code>Tools</code> → <code>Actions on Save</code> → <code>Reformat Code</code></p>
+<p>When activated it gives you the option to select the filetypes for which the reformatting should be applied.
+By default, every filetype is selected.
+It might make sense to reduce that list to only the filetypes you are actively working on.
+In a TypeScript project that could be for example <code>*.ts</code>, <code>*.tsx</code> and <code>*.json</code> files.</p>
+<p>You can also decide whether the auto-formatter should run on the whole file or just the code you changed.
+For new projects the default option <code>whole file</code> should be fine.
+For existing (messy) projects it might be sensible to start with the <code>changed files</code> setting first.
+Then, a one-liner doesn&rsquo;t bloat the whole commit, just because the linter found so many issues.</p>
+<p>⚠️ In the Community Edition this feature works exactly the same, but is limited to the supported languages.
+TypeScript for example is only supported in the Ultimate version.</p>
+<h4 id="visual-studio-code-v185">Visual Studio Code (v1.85)</h4>
+<p>In VS Code you find the setting to auto-format on save here:</p>
+<p><code>File</code> → <code>Preferences</code> → <code>Settings</code> → <code>Text Editor</code> → <code>Formatting</code> → <code>Format On Save</code></p>
+<p>This will enable auto-format for every filetypes for which the IDE finds a linter/formatter.</p>
+<p>With <code>Format On Save Mode</code> you can decide whether the auto-formatter should run on the whole file or just the code you changed.
+For new projects the default option <code>file</code> should be fine.
+For existing (messy) projects it might be sensible to start with the <code>modifications</code> setting first.
+Then, a one-liner doesn&rsquo;t bloat the whole commit, just because the linter found so many issues.</p>
+<h3 id="automate-all-the-things-auto-save--auto-format">Automate all the things! Auto-save + Auto-format</h3>
+<p>The ultimate combo is using the &ldquo;format on save&rdquo; feature together with &ldquo;auto-save&rdquo;.
+When activated, you can fully concentrate on writing code.
+You don&rsquo;t have to remember to save anymore.
+You don&rsquo;t have to remember to run the formatter anymore.
+You just write your code.
+The IDE will automatically save your changes and trigger the linters and formatters for you.</p>
+<h4 id="webstorm-v20233-2">WebStorm (v2023.3)</h4>
+<p>By default, WebStorm already saves automatically.
+So, if you activated the auto-format feature, then you already have the full combo.</p>
+<p>The auto-save is event-based.
+It will be triggered when you switch to the integrated terminal or the test runner or the git commit panel or switch to the browser.
+It will not be triggered, when switching between files.</p>
+<h4 id="intellij-ultimate-v20233-2">IntelliJ Ultimate (v2023.3)</h4>
+<p>By default, IntelliJ Ultimate already saves automatically (Community Edition works the same).
+So, if you activated the auto-format feature, then you already have the full combo.</p>
+<p>The auto-save is event-based.
+It will be triggered when you switch to the integrated terminal or the test runner or the git commit panel or switch to the browser.
+It will not be triggered, when switching between files.</p>
+<h4 id="visual-studio-code-v185-1">Visual Studio Code (v1.85)</h4>
+<p>In VS Code the auto-save feature can be toggled in the main menu:</p>
+<p><code>File</code> -&gt; <code>Auto Save</code></p>
+<p>⚠️ By default, the auto-save is time-based.
+It will save the currently edited file after one second.
+<strong>But</strong>, the time-based auto-save does <strong>not</strong> work together with the auto-format.
+To combine both features the setting</p>
+<p><code>File</code> → <code>Preferences</code> → <code>Settings</code> → <code>Text Editor</code> → <code>Files</code> → <code>Auto Save</code></p>
+<p>needs to be changed to <code>onFocusChange</code> or <code>onWindowChange</code>.</p>
+<p>Now, the auto-save is event-based and will automatically trigger the auto-format.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li>&ldquo;Formatters, linters, and compilers: Oh my!&rdquo; - Josh Goldberg <a href="https://github.com/readme/guides/formatters-linters-compilers">https://github.com/readme/guides/formatters-linters-compilers</a></li>
+<li>List of all linting rules in ESLint: <a href="https://eslint.org/docs/latest/rules">https://eslint.org/docs/latest/rules</a></li>
+<li>Format / Auto Format in WebStorm: <a href="https://www.jetbrains.com/help/webstorm/reformat-and-rearrange-code.html">https://www.jetbrains.com/help/webstorm/reformat-and-rearrange-code.html</a></li>
+<li>Save / Auto Save in VS Code: <a href="https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save">https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save</a></li>
+<li>Format / Auto Format in VS Code: <a href="https://code.visualstudio.com/docs/editor/codebasics#_formatting">https://code.visualstudio.com/docs/editor/codebasics#_formatting</a></li>
+</ul>
+
+
+    </main>
+  </div>
+  <footer>
+    <div class="footer-wrapper">
+      Powered by <a href="https://gohugo.io/" target="_blank" rel="external">Hugo</a>,
+      using the <a href="https://github.com/bjacquemet/personal-web" target='_blank' rel="external">Personal Web</a> theme.
+      Icons come from the <a href="https://fontawesome.com/license" target="_blank" rel="external">Font Awesome</a> library.
+      Background <a href="https://flickr.com/photos/lawrenceyeah/9659161869" target='_blank' rel="external">image</a> by Lawrence Wang /
+      <a href="https://creativecommons.org/licenses/by/2.0/" target='_blank' rel="external">CC BY 2.0</a>.
+    </div>
+  </footer>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Raleway:400,400i,600" rel="stylesheet">
+  <script type="text/javascript">
+    document.querySelector('.mobile-header').addEventListener('click', function () {
+      var om = document.querySelector(".overlay-menu");
+      if (document.querySelector('.hamburger').classList.contains("cross")) {
+        document.querySelector('.hamburger').classList.remove("cross");
+        om.style.display = "none";
+        om.style.width = "0%";
+        om.style.height = "0%";
+      }
+      else {
+        document.querySelector('.hamburger').classList.add("cross");
+        om.style.width = "100%";
+        om.style.height = "100vh";
+        om.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

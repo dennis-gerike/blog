@@ -7,8 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dgerike.github.io/dennis-gerike.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IDE</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/ide/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/ide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IntelliJ</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/intellij/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/intellij/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linter</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/linter/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/linter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Static Code Analysis</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/static-code-analysis/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/static-code-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TypeScript</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/typescript/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/typescript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VS Code</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/vs-code/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/vs-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WebStorm</title>
+      <link>https://dgerike.github.io/dennis-gerike.de/tags/webstorm/</link>
+      <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://dgerike.github.io/dennis-gerike.de/tags/webstorm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>BDD</title>
       <link>https://dgerike.github.io/dennis-gerike.de/tags/bdd/</link>
