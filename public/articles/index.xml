@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on // - Dennis Gerike</title>
-    <link>https://dgerike.github.io/dennis-gerike.de/articles/</link>
+    <link>https://dennis-gerike.de/articles/</link>
     <description>Recent content in Posts on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
     <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://dgerike.github.io/dennis-gerike.de/articles/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dennis-gerike.de/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Saving time by using the IDE&#39;s linters and formatters</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</link>
+      <link>https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</guid>
+      <guid>https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</guid>
       <description>&lt;p&gt;How should code be indented - with tabs or with spaces?&#xA;Should the indentation be two or four spaces wide?&#xA;Should the opening curly brace be on the same line as the function declaration or on the next line?&#xA;Should there be an empty line before each return statement?&#xA;Should &amp;ldquo;yoda&amp;rdquo; conditions be allowed or even enforced?&#xA;Should unused variables be deleted?&lt;/p&gt;&#xA;&lt;p&gt;With each of those questions you can fill whole tech talks.&#xA;But does it make sense to discuss these questions in your team?&#xA;Does it make sense to define &lt;strong&gt;custom&lt;/strong&gt; rules, just for your project?&#xA;Is it worth the time and effort?&#xA;Will it save you time or money in the future?&#xA;Will the code quality be better compared to just using the &lt;strong&gt;standard&lt;/strong&gt; linting settings of the IDE?&#xA;Let&amp;rsquo;s explore the idea.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gherkin vs Cucumber vs BDD - What is the difference?</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</link>
+      <link>https://dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</guid>
+      <guid>https://dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</guid>
       <description>&lt;p&gt;The terms &lt;strong&gt;Gherkin&lt;/strong&gt;, &lt;strong&gt;Cucumber&lt;/strong&gt; and &lt;strong&gt;BDD&lt;/strong&gt; are closely related.&#xA;They mostly appear in the same context, but they are distinctly different things and cannot be used interchangeably.&#xA;In discussions, online articles or even in big test management tools they often get mixed up.&lt;/p&gt;&#xA;&lt;p&gt;If you try to find &lt;em&gt;&amp;ldquo;Gherkin alternatives&amp;rdquo;&lt;/em&gt; in your favorite search engine you will be presented with many &lt;em&gt;Cucumber&lt;/em&gt; alternatives, but nearly no results for &lt;em&gt;Gherkin&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The test management tool &amp;ldquo;Xray&amp;rdquo; - a 3rd party plugin for Jira - is also a bit sloppy when it comes to the wording.&#xA;You can switch the &amp;ldquo;Test Type&amp;rdquo; to &amp;ldquo;Cucumber&amp;rdquo; to then enter a &amp;ldquo;Gherkin&amp;rdquo; scenario into the input field below!?!&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;xray-mixes-up-cucumber-and-gherkin.png&#34; alt=&#34;Cucumber and Gherkin mixed up in Xray&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Another common misconception is when people write tests in Gherkin and then think they are doing BDD.&#xA;Spoiler alert: this is (often) not the case.&lt;/p&gt;</description>
     </item>
   </channel>

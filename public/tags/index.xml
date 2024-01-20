@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on // - Dennis Gerike</title>
-    <link>https://dgerike.github.io/dennis-gerike.de/tags/</link>
+    <link>https://dennis-gerike.de/tags/</link>
     <description>Recent content in Tags on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
     <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://dgerike.github.io/dennis-gerike.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dennis-gerike.de/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IDE</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/ide/</link>
+      <link>https://dennis-gerike.de/tags/ide/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/ide/</guid>
+      <guid>https://dennis-gerike.de/tags/ide/</guid>
       <description></description>
     </item>
     <item>
       <title>IntelliJ</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/intellij/</link>
+      <link>https://dennis-gerike.de/tags/intellij/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/intellij/</guid>
+      <guid>https://dennis-gerike.de/tags/intellij/</guid>
       <description></description>
     </item>
     <item>
       <title>Linter</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/linter/</link>
+      <link>https://dennis-gerike.de/tags/linter/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/linter/</guid>
+      <guid>https://dennis-gerike.de/tags/linter/</guid>
       <description></description>
     </item>
     <item>
       <title>Static Code Analysis</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/static-code-analysis/</link>
+      <link>https://dennis-gerike.de/tags/static-code-analysis/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/static-code-analysis/</guid>
+      <guid>https://dennis-gerike.de/tags/static-code-analysis/</guid>
       <description></description>
     </item>
     <item>
       <title>TypeScript</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/typescript/</link>
+      <link>https://dennis-gerike.de/tags/typescript/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/typescript/</guid>
+      <guid>https://dennis-gerike.de/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
       <title>VS Code</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/vs-code/</link>
+      <link>https://dennis-gerike.de/tags/vs-code/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/vs-code/</guid>
+      <guid>https://dennis-gerike.de/tags/vs-code/</guid>
       <description></description>
     </item>
     <item>
       <title>WebStorm</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/webstorm/</link>
+      <link>https://dennis-gerike.de/tags/webstorm/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/webstorm/</guid>
+      <guid>https://dennis-gerike.de/tags/webstorm/</guid>
       <description></description>
     </item>
     <item>
       <title>BDD</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/bdd/</link>
+      <link>https://dennis-gerike.de/tags/bdd/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/bdd/</guid>
+      <guid>https://dennis-gerike.de/tags/bdd/</guid>
       <description></description>
     </item>
     <item>
       <title>Cucumber</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/cucumber/</link>
+      <link>https://dennis-gerike.de/tags/cucumber/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/cucumber/</guid>
+      <guid>https://dennis-gerike.de/tags/cucumber/</guid>
       <description></description>
     </item>
     <item>
       <title>Cypress</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/cypress/</link>
+      <link>https://dennis-gerike.de/tags/cypress/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/cypress/</guid>
+      <guid>https://dennis-gerike.de/tags/cypress/</guid>
       <description></description>
     </item>
     <item>
       <title>Gherkin</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/gherkin/</link>
+      <link>https://dennis-gerike.de/tags/gherkin/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/gherkin/</guid>
+      <guid>https://dennis-gerike.de/tags/gherkin/</guid>
       <description></description>
     </item>
     <item>
       <title>Xray</title>
-      <link>https://dgerike.github.io/dennis-gerike.de/tags/xray/</link>
+      <link>https://dennis-gerike.de/tags/xray/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dgerike.github.io/dennis-gerike.de/tags/xray/</guid>
+      <guid>https://dennis-gerike.de/tags/xray/</guid>
       <description></description>
     </item>
   </channel>
