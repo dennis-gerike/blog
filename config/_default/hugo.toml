@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = '// - Dennis Gerike'
 theme = 'personal-web'
 Copyright = 'Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869'
+enableRobotsTXT = true
 
 [params.sidebar]
   logo = "images/dennis-gerike.jpg"
