@@ -1,8 +1,18 @@
 ---
-title: Contact me
-description: How to contact me and where to find more information 
+title: Impressum (🇬🇧 Legal Notice)
+description: Legal Notice
 ---
 
-If you want to get in touch with me, please head over to my freelancermap profile: https://www.freelancermap.de/profil/test-automation-engineer-bdd-cypress-gherkin.
+## Angaben gemäß § 5 TMG
+Dennis Gerike\
+Krautstr. 53\
+10243 Berlin
 
-Apart from a contact form, there you will also find up-to-date information about my previous **projects**, my **availability** and the **pricing**.
+🇬🇧 This Legal Notice complies with the German laws under § 5 TMG and § 55 RStV.
+
+## Kontakt (🇬🇧 Contact)
+E-Mail: info@dennis-gerike.de\
+Kontaktformular: https://www.freelancermap.de/profil/test-automation-engineer-bdd-cypress-gherkin
+
+## Umsatzsteuer-ID (🇬🇧 VAT ID)
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE358127097 
