@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'><head>
-  <title>Cypress - // - Dennis Gerike</title>
-  <link rel='canonical' href='https://dennis-gerike.de/tags/cypress/' />
+  <title>Is the test pyramid compatible with BDD? - // - Dennis Gerike</title>
+  <link rel='canonical' href='https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/' />
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <meta name='description' content='' />
+  <meta name='description' content='When working according to the test pyramid, is it possible to integrate BDD somehow? Or are both concepts too different?' />
   <meta name='theme-color' content='#FD3519' />
   
 
@@ -19,14 +19,19 @@
 <link rel="stylesheet" href="https://dennis-gerike.de/sass/style.min.dce7cd3d44a877c50fd7da73096b4827b6320670ee548d2edf6b8656ba8fdcaf.css" integrity="sha256-3OfNPUSod8UP19pzCWtIJ7YyBnDuVI0u32uGVrqP3K8=" media="screen">
 <link rel="stylesheet" href="https://dennis-gerike.de/syntax.min.css" integrity="" media="screen">
 
-  <meta property="og:title" content="Cypress" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://dennis-gerike.de/tags/cypress/" />
+  <meta property="og:title" content="Is the test pyramid compatible with BDD?" />
+<meta property="og:description" content="When working according to the test pyramid, is it possible to integrate BDD somehow? Or are both concepts too different?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-02-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-21T00:00:00+00:00" />
 
 
-  <meta itemprop="name" content="Cypress">
-<meta itemprop="description" content="">
+  <meta itemprop="name" content="Is the test pyramid compatible with BDD?">
+<meta itemprop="description" content="When working according to the test pyramid, is it possible to integrate BDD somehow? Or are both concepts too different?"><meta itemprop="datePublished" content="2024-02-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-02-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="761">
+<meta itemprop="keywords" content="Test Pyramid,BDD,Unit Tests,Integration Tests,e2e Tests," />
 </head>
 <body>
 
@@ -177,20 +182,72 @@
 
   <div class="content-wrapper">
     
-    <main id="content" class="tags">
+    <main id="content" class="posts">
 
-  <h1 id="title"> Cypress</h1>
-  <p></p>
-  
-    <ul id="list">
-      
-        <li>
-  <a href="https://dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/">Gherkin vs Cucumber vs BDD - What is the difference?</a>
-  <div class="meta">Mon, Jan 1, 2024</div>
-</li>
-      
-    </ul>
-  
+
+  <h1>Is the test pyramid compatible with BDD?</h1>
+  <p>The test pyramid is a popular metaphor to describe how the testing efforts should be distributed in a software development project.
+It recommends having many unit tests, some integration tests and a few end-2-end tests.</p>
+<p>One of the motivations behind BDD is to create a living documentation, usually described with Gherkin scenarios and implemented with Cucumber tests.
+Those Cucumber tests are often seen as the tip of the testing pyramid.
+But is this a valid assumption?</p>
+<p><img src="bdd-vs-testing-pyramid.png" alt="Can you combine BDD with the test pyramid?"></p>
+<h2 id="test-pyramid-in-a-nutshell">Test pyramid in a nutshell</h2>
+<p>Over the years many different variants of the test pyramid have been discussed (e.g. the ice cream cone, cupcake or hour glass).
+But, for this discussion we only need the classic pyramid.
+It breaks down the automated tests in three layers.</p>
+<h3 id="unit-tests">Unit tests</h3>
+<p>Unit tests build the foundation and should be - by numbers - the largest test suite.
+They test small chunks of code, are isolated from other dependencies, and are therefore extremely fast to execute.</p>
+<p>Example: Tests that verify that the login function works.</p>
+<h3 id="integration-tests">Integration tests</h3>
+<p>Integration tests verify that the units are working together, not just work in isolation.
+To properly test that the units can be integrated into the system there are fewer options to create mocks or stubs.
+Therefore, those tests are slower to run und the test suite needs to be smaller.</p>
+<p>Example: Tests that verify that using the login function triggers the creation of a session.</p>
+<h3 id="end-2-end-tests">End-2-End tests</h3>
+<p>The tip of the test pyramid is known under many names: acceptance tests, UAT, end-2-end tests, UI tests, GUI tests, etc.
+What they all have in common is that they test a path through the system from the user&rsquo;s perspective.
+Those tests focus on the behavior of the system (the &ldquo;what&rdquo;), while unit and integration tests focus on the implementation details (the &ldquo;how&rdquo;).
+In general, e2e tests are much slower because they require a deployed and running instance of the application.</p>
+<p>Example: Tests that verify that the user is redirected to the dashboard after a successful login.</p>
+<h2 id="bdd-in-a-nutshell">BDD in a nutshell</h2>
+<p>In BDD (behavior-driven development) each feature goes through three phases: Discovery, formulation and automation.
+The job of the discovery phase is to create a shared understanding between everyone involved.
+In the formulation phase a specification document is produced that is human- and machine-readable.
+And the result of the automation phase should be a living documentation.</p>
+<p>This is explained in more detail in the article <a href="/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/">Gherkin vs Cucumber vs BDD - What is the difference</a>.</p>
+<h2 id="combining-bdd-and-the-test-pyramid">Combining BDD and the test pyramid</h2>
+<p>At first glance there doesn&rsquo;t seem to be much overlap between BDD and the test pyramid.
+But, at the end of the day, an automated BDD test is nothing more than a plain old e2e test.
+It tests one aspect of the application from the end user&rsquo;s perspective.
+Putting the BDD tests on top of the pyramid seems to be valid.
+Also - by definition - the formulated BDD specification is supposed to directly guide the developer with writing their TDD tests.
+So, we have a strong connection here.</p>
+<p>But, nonetheless, the focus of BDD is not to produce tests.
+The primary goal is to specify and document the system behavior.
+The automated tests are a bonus that we get for creating the living documentation.</p>
+<p>The goal of the test pyramid is to remind the developers to invest heavily in unit tests, not to forget about the upper layers, and being careful when adding (too many) e2e tests.
+The important part is that the pyramid belongs to the developers.
+They decide which tools they use and how much they test on each layer.</p>
+<p>The BDD tests on the other hand belong to the business.
+Business decides how complex and detailed the Gherkin scenarios (and therefore the Cucumber tests) should become.
+When the BDD tests are now part of the test pyramid, then suddenly business dictates what and how much the devs have to test.
+Then the construct becomes a shared pyramid and cannot fulfil its original intention anymore.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>BDD as a concept primarily helps the business, the test pyramid metaphor primarily helps the developers.
+Both have their right to exist and both can co-exist.
+But mixing them does not work well.
+Developers can and should have e2e tests, but they should decide about the amount, the detail and the technology themselves.
+Therefore, business has to have their own test suite for the BDD tests.
+They may influence what happens in the test pyramid (remember: BDD should drive the TDD tests), but they should not be able to dictate it.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://www.smashingmagazine.com/2023/09/long-live-test-pyramid/#all-hail-the-mighty-test-pyramid">https://www.smashingmagazine.com/2023/09/long-live-test-pyramid/#all-hail-the-mighty-test-pyramid</a></li>
+<li><a href="https://cucumber.io/blog/bdd/bdd-approval-testing-and-visualtest/">https://cucumber.io/blog/bdd/bdd-approval-testing-and-visualtest/</a></li>
+<li><a href="https://khushiy.com/2019/02/07/test-pyramid-antipatterns/">https://khushiy.com/2019/02/07/test-pyramid-antipatterns/</a></li>
+</ul>
+
 
     </main>
   </div>

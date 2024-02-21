@@ -2,22 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dennis-gerike.de/tags/bdd/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/tags/e2e-tests/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/tags/integration-tests/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/articles/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/tags/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/tags/test-pyramid/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dennis-gerike.de/tags/unit-tests/</loc>
+    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dennis-gerike.de/tags/agile/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dennis-gerike.de/tags/connextra/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/</loc>
-    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dennis-gerike.de/tags/jira/</loc>
-    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennis-gerike.de/articles/</loc>
-    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennis-gerike.de/tags/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dennis-gerike.de/tags/user-story/</loc>
@@ -49,9 +67,6 @@
   </url><url>
     <loc>https://dennis-gerike.de/tags/webstorm/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennis-gerike.de/tags/bdd/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dennis-gerike.de/tags/cucumber/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>e2e Tests on // - Dennis Gerike</title>
+    <link>https://dennis-gerike.de/tags/e2e-tests/</link>
+    <description>Recent content in e2e Tests on // - Dennis Gerike</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
+    <lastBuildDate>Wed, 21 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dennis-gerike.de/tags/e2e-tests/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is the test pyramid compatible with BDD?</title>
+      <link>https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/</guid>
+      <description>&lt;p&gt;The test pyramid is a popular metaphor to describe how the testing efforts should be distributed in a software development project.&#xA;It recommends having many unit tests, some integration tests and a few end-2-end tests.&lt;/p&gt;&#xA;&lt;p&gt;One of the motivations behind BDD is to create a living documentation, usually described with Gherkin scenarios and implemented with Cucumber tests.&#xA;Those Cucumber tests are often seen as the tip of the testing pyramid.&#xA;But is this a valid assumption?&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;bdd-vs-testing-pyramid.png&#34; alt=&#34;Can you combine BDD with the test pyramid?&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
