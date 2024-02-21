@@ -39,7 +39,7 @@ enableRobotsTXT = true
   identifier = "demo"
   name = "Demo Project"
   title = "Demo Project"
-  url = "https://github.com/dgerike/more-cars-e2e-tests"
+  url = "https://github.com/dennis-gerike/flickr-photos-to-postcard-converter"
   weight = -100
 
 [[menu.main]]
