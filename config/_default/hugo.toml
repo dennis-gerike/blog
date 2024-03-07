@@ -10,7 +10,7 @@ enableRobotsTXT = true
   backgroundImage = "images/bg2.jpg"
 
 [params.social]
-  github = "https://github.com/dgerike"
+  github = "https://github.com/dennis-gerike"
   linkedin = "https://www.linkedin.com/in/dennis-gerike/"
 
 [params]
