@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IntelliJ on // - Dennis Gerike</title>
-    <link>http://localhost:1313/tags/intellij/</link>
+    <link>https://dennis-gerike.de/tags/intellij/</link>
     <description>Recent content in IntelliJ on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
     <lastBuildDate>Wed, 17 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dennis-gerike.de/tags/intellij/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Saving time by using the IDE&#39;s linters and formatters</title>
-      <link>http://localhost:1313/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</link>
+      <link>https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</link>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</guid>
+      <guid>https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</guid>
       <description>&lt;p&gt;How should code be indented - with tabs or with spaces?&#xA;Should the indentation be two or four spaces wide?&#xA;Should the opening curly brace be on the same line as the function declaration or on the next line?&#xA;Should there be an empty line before each return statement?&#xA;Should &amp;ldquo;yoda&amp;rdquo; conditions be allowed or even enforced?&#xA;Should unused variables be deleted?&lt;/p&gt;&#xA;&lt;p&gt;With each of those questions you can fill whole tech talks.&#xA;But does it make sense to discuss these questions in your team?&#xA;Does it make sense to define &lt;strong&gt;custom&lt;/strong&gt; rules, just for your project?&#xA;Is it worth the time and effort?&#xA;Will it save you time or money in the future?&#xA;Will the code quality be better compared to just using the &lt;strong&gt;standard&lt;/strong&gt; linting settings of the IDE?&#xA;Let&amp;rsquo;s explore the idea.&lt;/p&gt;</description>
     </item>
   </channel>

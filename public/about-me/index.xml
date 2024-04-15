@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About me on // - Dennis Gerike</title>
-    <link>http://localhost:1313/about-me/</link>
+    <link>https://dennis-gerike.de/about-me/</link>
     <description>Recent content in About me on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
-    <atom:link href="http://localhost:1313/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dennis-gerike.de/about-me/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
