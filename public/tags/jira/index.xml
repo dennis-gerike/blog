@@ -2,18 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jira on // - Dennis Gerike</title>
-    <link>https://dennis-gerike.de/tags/jira/</link>
+    <link>http://localhost:1313/tags/jira/</link>
     <description>Recent content in Jira on // - Dennis Gerike</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Background image by Lawrence Wang - CC BY 2.0 - flickr.com/photos/lawrenceyeah/9659161869</copyright>
-    <lastBuildDate>Wed, 31 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://dennis-gerike.de/tags/jira/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/jira/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to measure the test coverage of user stories in Jira?</title>
+      <link>http://localhost:1313/articles/how-to-measure-the-test-coverage-of-user-stories-in-jira/2024/04/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/how-to-measure-the-test-coverage-of-user-stories-in-jira/2024/04/</guid>
+      <description>&lt;p&gt;Creating &lt;strong&gt;code coverage reports&lt;/strong&gt; is easy these days.&#xA;For every major programming language there exist tools that can analyze which lines of code have been touched by the&#xA;unit tests – and which were not.&#xA;With the help of these reports it is easy to find gaps in the test coverage and to locate dead code.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;code-coverage-example.png&#34; alt=&#34;Code Coverage Example&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Getting a &lt;strong&gt;feature coverage report&lt;/strong&gt; is much harder.&#xA;A code coverage tool doesn&amp;rsquo;t know anything about the features and how they are connected to the code or to the tests.&#xA;A project management tool on the other hand has all the information about the features, but has no clue about how they&#xA;are linked to the tests.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;test-vs-code-vs-feature.png&#34; alt=&#34;Tests vs Code vs Feature&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this article we will discover what is - in general - needed to generate such a feature coverage report.&#xA;And you will learn how it can be implemented in Jira, how to manage the user stories, requirements and acceptance tests,&#xA;how to come up with a useful coverage metric and how to actually visualize the numbers.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Who wants what and why? The original meaning of a user story</title>
-      <link>https://dennis-gerike.de/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/</link>
+      <link>http://localhost:1313/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/</link>
       <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://dennis-gerike.de/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/</guid>
+      <guid>http://localhost:1313/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/</guid>
       <description>&lt;p&gt;We have all seen them.&#xA;Gigantic &lt;em&gt;Jira&lt;/em&gt; user stories, filled with extensive specification, a truckload of screens for every conceivable device type and a list of things that are supposed to be acceptance criteria.&#xA;But, regardless of all the available information, in the end the programmed solution deviates significantly from what the stakeholder really wanted.&#xA;How is this possible?&#xA;Why does this happen?&#xA;How can we do better?&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,91 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dennis-gerike.de/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/coverage/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/articles/</loc>
-    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/bdd/</loc>
+    <loc>http://localhost:1313/articles/how-to-measure-the-test-coverage-of-user-stories-in-jira/2024/04/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/jira/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/articles/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/scriptrunner/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/user-story/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/xray/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bdd/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/e2e-tests/</loc>
+    <loc>http://localhost:1313/tags/e2e-tests/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/integration-tests/</loc>
+    <loc>http://localhost:1313/tags/integration-tests/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/</loc>
+    <loc>http://localhost:1313/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/</loc>
+    <loc>http://localhost:1313/tags/test-pyramid/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/test-pyramid/</loc>
+    <loc>http://localhost:1313/tags/unit-tests/</loc>
     <lastmod>2024-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/unit-tests/</loc>
-    <lastmod>2024-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennis-gerike.de/tags/agile/</loc>
+    <loc>http://localhost:1313/tags/agile/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/connextra/</loc>
+    <loc>http://localhost:1313/tags/connextra/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/jira/</loc>
+    <loc>http://localhost:1313/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/</loc>
     <lastmod>2024-01-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/user-story/</loc>
-    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennis-gerike.de/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/</loc>
-    <lastmod>2024-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dennis-gerike.de/tags/ide/</loc>
+    <loc>http://localhost:1313/tags/ide/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/intellij/</loc>
+    <loc>http://localhost:1313/tags/intellij/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/linter/</loc>
+    <loc>http://localhost:1313/tags/linter/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</loc>
+    <loc>http://localhost:1313/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/static-code-analysis/</loc>
+    <loc>http://localhost:1313/tags/static-code-analysis/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/typescript/</loc>
+    <loc>http://localhost:1313/tags/typescript/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/vs-code/</loc>
+    <loc>http://localhost:1313/tags/vs-code/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/webstorm/</loc>
+    <loc>http://localhost:1313/tags/webstorm/</loc>
     <lastmod>2024-01-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/cucumber/</loc>
+    <loc>http://localhost:1313/tags/cucumber/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/cypress/</loc>
+    <loc>http://localhost:1313/tags/cypress/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/gherkin/</loc>
+    <loc>http://localhost:1313/tags/gherkin/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</loc>
+    <loc>http://localhost:1313/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dennis-gerike.de/tags/xray/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/about-me/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/about-me/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://dennis-gerike.de/categories/</loc>
-  </url><url>
-    <loc>https://dennis-gerike.de/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url>
 </urlset>

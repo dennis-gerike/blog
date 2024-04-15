@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang='en'><head>
+<html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title> - // - Dennis Gerike</title>
-  <link rel='canonical' href='https://dennis-gerike.de/articles/' />
+  <link rel='canonical' href='http://localhost:1313/articles/' />
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <meta name='description' content='' />
@@ -16,13 +16,13 @@
 
 
 
-<link rel="stylesheet" href="https://dennis-gerike.de/sass/style.min.59f04a9dad5618973d4c82e2c8d6c1e3914201043471d8503ab06e2c56e1a2f4.css" integrity="sha256-WfBKna1WGJc9TILiyNbB45FCAQQ0cdhQOrBuLFbhovQ=" media="screen">
-<link rel="stylesheet" href="https://dennis-gerike.de/syntax.min.css" integrity="" media="screen">
+<link rel="stylesheet" href="http://localhost:1313/sass/style.min.57dc1959acb77a1f01eac5a4c501ded8d3d259a3e9ccea835f0560f38461d5ea.css" integrity="sha256-V9wZWay3eh8B6sWkxQHe2NPSWaPpzOqDXwVg84Rh1eo=" media="screen">
+<link rel="stylesheet" href="http://localhost:1313/syntax.min.css" integrity="" media="screen">
 
   <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://dennis-gerike.de/articles/" />
+<meta property="og:url" content="http://localhost:1313/articles/" />
 
   <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
@@ -31,11 +31,11 @@
 
   <header style="background-image:linear-gradient(
       rgba(0,0,0,0.4),rgba(0,0,0,0.4)
-    ),url(&#39;https://dennis-gerike.de/images/bg2.jpg&#39;)">
+    ),url(&#39;http://localhost:1313/images/bg2.jpg&#39;)">
   <div class="intro">
     <div class="logo-container">
-      <a href="https://dennis-gerike.de/">
-        <img src='https://dennis-gerike.de/images/dennis-gerike.jpg' alt="Dennis Gerike" class="rounded-logo">
+      <a href="http://localhost:1313/">
+        <img src='http://localhost:1313/images/dennis-gerike.jpg' alt="Dennis Gerike" class="rounded-logo">
       </a>
     </div>
     <h2>Dennis Gerike</h2>
@@ -110,8 +110,8 @@
   <header>
     <div class="intro">
       <div class="logo-container">
-        <a href="https://dennis-gerike.de/">
-          <img src='https://dennis-gerike.de/images/dennis-gerike.jpg' alt="Dennis Gerike" class="rounded-logo">
+        <a href="http://localhost:1313/">
+          <img src='http://localhost:1313/images/dennis-gerike.jpg' alt="Dennis Gerike" class="rounded-logo">
         </a>
       </div>
       <h2>Dennis Gerike</h2>
@@ -185,7 +185,38 @@
     
       <div class="post-container">
   <h2>
-    <a href="https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/">Is the test pyramid compatible with BDD?</a>
+    <a href="http://localhost:1313/articles/how-to-measure-the-test-coverage-of-user-stories-in-jira/2024/04/">How to measure the test coverage of user stories in Jira?</a>
+  </h2>
+  April 15, 2024
+  <p><p>Creating <strong>code coverage reports</strong> is easy these days.
+For every major programming language there exist tools that can analyze which lines of code have been touched by the
+unit tests – and which were not.
+With the help of these reports it is easy to find gaps in the test coverage and to locate dead code.</p>
+<p><img src="code-coverage-example.png" alt="Code Coverage Example"></p>
+<p>Getting a <strong>feature coverage report</strong> is much harder.
+A code coverage tool doesn&rsquo;t know anything about the features and how they are connected to the code or to the tests.
+A project management tool on the other hand has all the information about the features, but has no clue about how they
+are linked to the tests.</p>
+<p><img src="test-vs-code-vs-feature.png" alt="Tests vs Code vs Feature"></p>
+<p>In this article we will discover what is - in general - needed to generate such a feature coverage report.
+And you will learn how it can be implemented in Jira, how to manage the user stories, requirements and acceptance tests,
+how to come up with a useful coverage metric and how to actually visualize the numbers.</p></p>
+  <div class="read-more">
+    <a alt="How to measure the test coverage of user stories in Jira?" href="http://localhost:1313/articles/how-to-measure-the-test-coverage-of-user-stories-in-jira/2024/04/" /><div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M0 28.818v80.232h44.086c5.2-.045 9.824 1.027 12.077 4.388V34.334c-2.18-3.675-6.792-5.516-12.077-5.516H0zm70.914 0c-5.285 0-9.896 1.841-12.077 5.516v79.104c2.253-3.36 6.876-4.388 12.077-4.388H115V28.818H70.914zM12.034 42.19h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.348h-33.43a2.674 2.674 0 0 1 0-5.348zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.348h-33.43a2.674 2.674 0 1 1 0-5.348zm-57.5 12.034h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35z"/>
+  
+  </svg>
+</div>
+
+    Read more</a>
+  </div>
+</div>
+    
+      <div class="post-container">
+  <h2>
+    <a href="http://localhost:1313/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/">Is the test pyramid compatible with BDD?</a>
   </h2>
   February 21, 2024
   <p><p>The test pyramid is a popular metaphor to describe how the testing efforts should be distributed in a software development project.
@@ -195,7 +226,7 @@ Those Cucumber tests are often seen as the tip of the testing pyramid.
 But is this a valid assumption?</p>
 <p><img src="bdd-vs-testing-pyramid.png" alt="Can you combine BDD with the test pyramid?"></p></p>
   <div class="read-more">
-    <a alt="Is the test pyramid compatible with BDD?" href="https://dennis-gerike.de/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/" /><div class="icon">
+    <a alt="Is the test pyramid compatible with BDD?" href="http://localhost:1313/articles/is-the-test-pyramid-compatible-with-bdd/2024/02/" /><div class="icon">
   <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
   
   <path d="M0 28.818v80.232h44.086c5.2-.045 9.824 1.027 12.077 4.388V34.334c-2.18-3.675-6.792-5.516-12.077-5.516H0zm70.914 0c-5.285 0-9.896 1.841-12.077 5.516v79.104c2.253-3.36 6.876-4.388 12.077-4.388H115V28.818H70.914zM12.034 42.19h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.348h-33.43a2.674 2.674 0 0 1 0-5.348zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.348h-33.43a2.674 2.674 0 1 1 0-5.348zm-57.5 12.034h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35z"/>
@@ -209,7 +240,7 @@ But is this a valid assumption?</p>
     
       <div class="post-container">
   <h2>
-    <a href="https://dennis-gerike.de/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/">Who wants what and why? The original meaning of a user story</a>
+    <a href="http://localhost:1313/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/">Who wants what and why? The original meaning of a user story</a>
   </h2>
   January 31, 2024
   <p><p>We have all seen them.
@@ -219,7 +250,7 @@ How is this possible?
 Why does this happen?
 How can we do better?</p></p>
   <div class="read-more">
-    <a alt="Who wants what and why? The original meaning of a user story" href="https://dennis-gerike.de/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/" /><div class="icon">
+    <a alt="Who wants what and why? The original meaning of a user story" href="http://localhost:1313/articles/who-wants-what-and-why-the-original-meaning-of-a-user-story/2024/01/" /><div class="icon">
   <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
   
   <path d="M0 28.818v80.232h44.086c5.2-.045 9.824 1.027 12.077 4.388V34.334c-2.18-3.675-6.792-5.516-12.077-5.516H0zm70.914 0c-5.285 0-9.896 1.841-12.077 5.516v79.104c2.253-3.36 6.876-4.388 12.077-4.388H115V28.818H70.914zM12.034 42.19h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.348h-33.43a2.674 2.674 0 0 1 0-5.348zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.348h-33.43a2.674 2.674 0 1 1 0-5.348zm-57.5 12.034h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35z"/>
@@ -233,7 +264,7 @@ How can we do better?</p></p>
     
       <div class="post-container">
   <h2>
-    <a href="https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/">Saving time by using the IDE&#39;s linters and formatters</a>
+    <a href="http://localhost:1313/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/">Saving time by using the IDE&#39;s linters and formatters</a>
   </h2>
   January 17, 2024
   <p><p>How should code be indented - with tabs or with spaces?
@@ -250,7 +281,7 @@ Will it save you time or money in the future?
 Will the code quality be better compared to just using the <strong>standard</strong> linting settings of the IDE?
 Let&rsquo;s explore the idea.</p></p>
   <div class="read-more">
-    <a alt="Saving time by using the IDE&#39;s linters and formatters" href="https://dennis-gerike.de/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/" /><div class="icon">
+    <a alt="Saving time by using the IDE&#39;s linters and formatters" href="http://localhost:1313/articles/saving-time-by-using-the-ides-linters-and-formatters/2024/01/" /><div class="icon">
   <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
   
   <path d="M0 28.818v80.232h44.086c5.2-.045 9.824 1.027 12.077 4.388V34.334c-2.18-3.675-6.792-5.516-12.077-5.516H0zm70.914 0c-5.285 0-9.896 1.841-12.077 5.516v79.104c2.253-3.36 6.876-4.388 12.077-4.388H115V28.818H70.914zM12.034 42.19h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.348h-33.43a2.674 2.674 0 0 1 0-5.348zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.348h-33.43a2.674 2.674 0 1 1 0-5.348zm-57.5 12.034h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35z"/>
@@ -264,7 +295,7 @@ Let&rsquo;s explore the idea.</p></p>
     
       <div class="post-container">
   <h2>
-    <a href="https://dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/">Gherkin vs Cucumber vs BDD - What is the difference?</a>
+    <a href="http://localhost:1313/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/">Gherkin vs Cucumber vs BDD - What is the difference?</a>
   </h2>
   January 1, 2024
   <p><p>The terms <strong>Gherkin</strong>, <strong>Cucumber</strong> and <strong>BDD</strong> are closely related.
@@ -277,7 +308,7 @@ You can switch the &ldquo;Test Type&rdquo; to &ldquo;Cucumber&rdquo; to then ent
 <p>Another common misconception is when people write tests in Gherkin and then think they are doing BDD.
 Spoiler alert: this is (often) not the case.</p></p>
   <div class="read-more">
-    <a alt="Gherkin vs Cucumber vs BDD - What is the difference?" href="https://dennis-gerike.de/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/" /><div class="icon">
+    <a alt="Gherkin vs Cucumber vs BDD - What is the difference?" href="http://localhost:1313/articles/gherkin-vs-cucumber-vs-bdd-what-is-the-difference/2024/01/" /><div class="icon">
   <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
   
   <path d="M0 28.818v80.232h44.086c5.2-.045 9.824 1.027 12.077 4.388V34.334c-2.18-3.675-6.792-5.516-12.077-5.516H0zm70.914 0c-5.285 0-9.896 1.841-12.077 5.516v79.104c2.253-3.36 6.876-4.388 12.077-4.388H115V28.818H70.914zM12.034 42.19h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.349h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.349h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.348h-33.43a2.674 2.674 0 0 1 0-5.348zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.348h-33.43a2.674 2.674 0 1 1 0-5.348zm-57.5 12.034h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35zm-57.5 12.035h33.431a2.674 2.674 0 1 1 0 5.35h-33.43a2.674 2.674 0 0 1 0-5.35zm57.5 0h33.431a2.674 2.674 0 0 1 0 5.35h-33.43a2.674 2.674 0 1 1 0-5.35z"/>
