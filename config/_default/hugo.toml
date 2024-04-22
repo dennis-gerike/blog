@@ -15,7 +15,7 @@ enableRobotsTXT = true
 
 [params]
   accentColor = "#387a02"
-  mainSections = ['post']
+  mainSections = ['posts']
 
 [params.sections]
   post = "article"
