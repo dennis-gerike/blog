@@ -100,12 +100,6 @@ header
     font-size: $font-size_h1
     font-weight: $font-weight_h1
 
-  .menu
-    text-align: left
-
-    p
-      margin-bottom: 0
-
   .socials
     padding: $padding-content
     bottom: 0
@@ -129,20 +123,17 @@ header
     +transition(all 0.25s)
     line-height: $line-height_menu
 
-    &:not(.social-link)
-      border-bottom: $grey-100 1px dashed
-
   a:hover, a:focus, a:active
     color: $secondary-color
-
-    &:not(.social-link)
-      font-weight: $font-weight_h1
-      border-bottom: $grey-100 1px dashed
 
   .intro
     padding: $padding-content
     position: absolute
     bottom: 140px
+
+    .menu
+      li
+        list-style-type: "\27A4"
 
   .rounded-logo
     +rounded
