@@ -1,0 +1,11 @@
+<div class="article-meta-information">
+  <div class="reading-time">
+    {{ partial "svg" (dict "iconName" "clock" "size" "26px") }}
+    <span>{{ .ReadingTime }} {{ "minute" | pluralize }}</span>
+  </div>
+
+  <div class="published-date">
+    {{ partial "svg" (dict "iconName" "calendar" "size" "26px") }}
+    <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+  </div>
+</div>
