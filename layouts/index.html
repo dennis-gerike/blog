@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+
+<section class="index-page">
+  <h1>─ {{ .Title }} ─</h1>
+  {{ .Content }}
+</section>
+
+<section class="latest-articles">
+  <h1>Latest articles</h1>
+  {{ $pages := where site.RegularPages "Type" "in" .Site.Params.mainSections }}
+  {{ range first 3 $pages }}
+    {{ partial "posts/item" . }}
+  {{ end }}
+</section>
+
+{{ partial "footer" . }}

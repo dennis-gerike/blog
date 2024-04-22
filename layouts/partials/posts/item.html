@@ -1,11 +1,17 @@
-<div class="post-container">
-  <h2>
-    <a href="{{.Permalink}}">{{ .Title }}</a>
-  </h2>
-  {{ .PublishDate.Format "January 2, 2006" }}
+<article>
+  <h1>
+    ✍
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h1>
+
+  {{ partial "posts/information" . }}
+
   <p>{{ .Summary }}</p>
+
   <div class="read-more">
-    <a alt="{{.Title}}" href="{{.Permalink}}" />{{ partial "svg" (dict "iconName" "read" "size" "18px")}}
-    Read more</a>
+    ➤
+    <a alt="{{ .Title }}" href="{{ .Permalink }}">
+      Continue reading
+    </a>
   </div>
-</div>
+</article>
