@@ -21,9 +21,6 @@ enableRobotsTXT = true
 [params.sections]
   post = "article"
 
-[params.main]
-  latestPublishHeader = " "
-
 [params.intro]
   main = "Dennis Gerike"
   sub = "Engineering test automation solutions for the web - with Cypress, BDD and Jira/Xray"
