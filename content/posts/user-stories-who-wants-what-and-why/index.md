@@ -30,7 +30,7 @@ And QA has enough information to write down the (end-2-end) test cases.
 
 A good method to write a good user story is to ask the question: _"Who wants what and why?"_ 
 This template is also known as the _Connextra_ format.
-```
+```plain
 As a <Role>
 I want to be able to <Feature>
 So, I can <Reason>
@@ -54,7 +54,7 @@ As a bonus, this automatically gives us the contact person (or team or departmen
 The literature often recommends the other way - to write user stories from the perspective of the end user.
 But, this can sometimes be misleading or just not very helpful.
 Take the following example:
-```
+```plain
 As a customer
 I want to have free shipping
 So I can save money
@@ -71,7 +71,7 @@ It is more like the stakeholder wants to enable the user to do something.
 A small, but important difference.
 
 Let's adjust the example:
-```
+```plain
 As a business person
 I want to offer free shipping
 So the customer can save money
@@ -79,7 +79,7 @@ So the customer can save money
 
 This solves the contact person problem, but the money saving part is still not convincing or helpful.
 Let's go one step further and adjust also the "why":
-```
+```plain
 As a business person
 I want to offer the customer free shipping
 So our average conversion rate increases
@@ -98,7 +98,7 @@ Even if the stakeholder did not provide the information directly, it can usually
 
 The important part is to keep the "what" in the user story short, but accurate.
 E.g. the following example is a bit too verbose:
-```
+```plain
 As a business person
 I want the user to pay 0€ for shipping for purchases higher than 50€
 So our average conversion rate increases
@@ -107,7 +107,7 @@ So our average conversion rate increases
 At first glance it can be hard for the reader to deduce how the 0€ and the 50€ are connected.
 What are we trying to achieve here?
 A better version would be:
-```
+```plain
 As a business person
 I want to offer the customer free shipping
 So our average conversion rate increases
@@ -132,7 +132,7 @@ But this is the most important part of a user story.
 As we have already seen in the "who" part above this can massively improve the reader's understanding of the feature request.
 
 Example with a missing "why":
-```
+```plain
 As a business person
 I want to offer the customer free shipping
 ```
@@ -143,7 +143,7 @@ We don't know which problem we want to solve with this feature.
 It is difficult to ask "good" questions, because the scope is so huge.
 
 Much better:
-```
+```plain
 As a business person
 I want to offer the customer free shipping
 So our average conversion rate increases
@@ -159,7 +159,7 @@ The questions are now directly targeted towards the stakeholder.
 Without the "why" it is difficult to come up with questions at all, or they go in every possible direction (which the stakeholder will not be able to answer).
 
 Another version could be:
-```
+```plain
 As a business person
 I want to offer the customer free shipping in an A/B test
 So we can test our assumption that the average conversion rate increases
@@ -188,7 +188,7 @@ They can also not decide how a new database field should be called, or if one is
 This is all developer territory and therefore their responsibility.
 
 Bad example:
-```
+```plain
 As a business person
 I want to have a field "user_accepted_all_cookies" in the table "users"
 So I know if we can track the user or not
@@ -200,7 +200,7 @@ This is the worst possible option and an anti-pattern in modern software develop
 The devs will stop thinking, the code quality gets worse and the stakeholders will become the bottleneck.
 
 Better:
-```
+```plain
 As a business person
 I want to know if the user accepted the cookies
 So I know if we can track the user or not

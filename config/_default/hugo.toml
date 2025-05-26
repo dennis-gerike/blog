@@ -56,6 +56,8 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+      style = 'arduino'
 
 [permalinks]
   [permalinks.page]
