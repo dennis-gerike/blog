@@ -34,10 +34,10 @@
     margin: 3em auto
 
 article
-  background: aliceblue
+  background: #f1f0ec
   padding: 1em
   margin-bottom: 1em
-  border-radius: 1em
+  border-radius: .35em
 
   h1
     font-size: $font-size-h3
@@ -56,8 +56,13 @@ article
 code
   font-family: $font-family_code
 
-.highlight code
-  font-size: $font-size_main_large
+.highlight
+  pre
+    background-color: inherit !important
+    margin-left: 0.75em
+
+  code
+    font-size: $font-size_main_large
 
 .posts
   img
@@ -74,6 +79,9 @@ code
 header
   .icon
     fill: white
+
+  .social-link
+    text-decoration: none
 
 .content-wrapper
   padding-top: 0
