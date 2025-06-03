@@ -22,7 +22,7 @@ enableRobotsTXT = true
 
 [params.intro]
   main = "Dennis Gerike"
-  sub = "Engineering test automation solutions for the web - with Cypress, BDD and Jira/Xray"
+  sub = "Engineering test automation solutions for the web - with Cypress, BDD and Jira"
 
 [[menu.main]]
   identifier = "about"
